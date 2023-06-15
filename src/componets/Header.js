@@ -1,10 +1,10 @@
 import React from 'react'
 import Filter from './Filter'
-function Header() {
+function Header(title) {
   return (
     <header>
-        <h1 className='orange'>Hello React</h1>
-        <Filter/>       
+        <h1 className='orange'>Movies</h1>
+               
     </header>
   )
 }

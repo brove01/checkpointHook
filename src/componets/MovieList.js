@@ -1,10 +1,14 @@
 import React from 'react'
 import MovieCard from './MovieCard'
-export const MovieList = () => {
+export const MovieList = (props) => {
   return (
-    <div className='listM'>
-        <h1>Your Movie Liste</h1>
-        <MovieCard/>
-    </div>
+    <>
+        {props.movies.map((movie,index)=>(
+          <div className='d-flex justify-content-start m-3'>
+            <img src={movie.Poster} alt='movie'></img>
+          </div>
+        ))}
+    </>
+    
   )
 }

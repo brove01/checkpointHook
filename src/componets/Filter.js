@@ -1,12 +1,14 @@
 import React from 'react'
 
-function Filter(title, rate) {
+function Filter(props) {
   return (
     <div>
         <form >
-            <label for="fname">Filter</label>
-            <input placeholder='Search movie here' type="text" id="fname" name="fname"/>
-            <button>Add</button>
+            <label for="fname">Search</label>
+            <input placeholder='Search movie here'value={props.value}
+            onChange={(event)=>props.setSearchValue(event.target.value)}
+            id="fname" name="fname"/>
+            
         </form>
     </div>
   )

@@ -64,12 +64,28 @@ form input{
 }
 .listM{
   background-color: #2e1701f3;
-  width:80%;
-  margin:10%;
+  width: 20px;;
+  margin:1%;
   border-radius:20px;
-  padding: 20px;
+  
   
 }
 .listM h1{
   color:orangered
+}
+.movie-app > .row{
+  display: flex;
+  flex-direction: row;
+  overflow:auto;
+  flex-wrap: nowrap;
+  justify-content:center;
+  width: 80%;
+  
+  
+}
+.movie-app{
+  margin-left:10%;
+  
+  
+  
 }
