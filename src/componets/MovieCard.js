@@ -1,20 +1,21 @@
 import React from 'react'
 
-function MovieCard(props) {
+function MovieCard({title, description, posterURL, rating}) {
   return (
-    <>
-      {props.movies.map((movie,index)=>(
-       <div className='card'>
-        <img src={movie.Poster} alt='movie' className='comg'></img>
-        <h4>Title:<span>{movie.Title}</span></h4>
-        <h4>Description:<span>{movie.Year}</span></h4>
-        <h4>Rating:<span>{movie.imdbID}</span></h4>
+    
+      
+        
+    <div className='card'>
+      <img src={posterURL} alt='movie' className='comg'></img>
+      <h4>Title:<span>{title}</span></h4>
+      <h4>Description:<span>{description}</span></h4>
+      <h4>Rating:<span>{rating}</span></h4>
         
           
             
-        </div>
-        ))}
-    </>
+    </div>
+       
+   
   )
 }
 

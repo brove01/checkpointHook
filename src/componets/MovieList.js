@@ -5,7 +5,7 @@ export const MovieList = (props) => {
     <>
         {props.movies.map((movie,index)=>(
           <div className='d-flex justify-content-start m-3'>
-            <img src={movie.Poster} alt='movie'></img>
+            <MovieCard title={movie.Title} description={movie.Type} posterURL={movie.Poster} rating={movie.imdbID}/>
           </div>
         ))}
     </>

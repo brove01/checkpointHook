@@ -4,7 +4,7 @@ function Header(title) {
   return (
     <header>
         <h1 className='orange'>Movies</h1>
-               
+        
     </header>
   )
 }

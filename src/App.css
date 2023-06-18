@@ -43,7 +43,7 @@ form input{
 }
 .card{
   width:300px;
-  height:400px;
+  height:500px;
   border-width: 5px;
   border-color: orangered;
   background-color: #0a0a0a;
@@ -63,6 +63,7 @@ form input{
   margin-left: 10px;
 }
 .listM{
+  display: flex;
   background-color: #2e1701f3;
   width: 20px;;
   margin:1%;
@@ -77,9 +78,12 @@ form input{
   display: flex;
   flex-direction: row;
   overflow:auto;
+  border-radius: 20px;
+  background-color: #2e1701f3;
   flex-wrap: nowrap;
   justify-content:center;
   width: 80%;
+  height:20%;
   
   
 }
